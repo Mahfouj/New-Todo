@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  android:layout_margin="@dimen/_7pxv"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Login_Singup">
+
+
+    <LinearLayout android:id="@+id/linearLoginOrSignUp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        style="@style/groupStyle_cornerRadius_rectangle_bg_name_primary_opacity_0_05_radius_14">
+
+        <androidx.appcompat.widget.Toolbar
+            android:gravity="center_horizontal"
+            android:id="@+id/toolbarAppBar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            >
+            <ImageButton
+                android:background="@drawable/rectangle_border_name_black_900_radius_7"
+                android:id="@+id/btnArrowLeft"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+               android:layout_marginRight="@dimen/_350pxh"
+                android:paddingHorizontal="@dimen/_6pxh"
+                android:paddingVertical="@dimen/_6pxv"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_arrow_left"
+                tools:ignore="ContentDescription"/>
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:id="@+id/linearThirtyFour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/_32pxh"
+            android:paddingTop="@dimen/_25pxv"
+            android:paddingEnd="@dimen/_32pxh"
+            android:paddingBottom="@dimen/_25pxv">
+
+            <LinearLayout
+                android:id="@+id/linearPageHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtWelcometoourcommunity"
+                    style="@style/txtPoppinsbold34"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/_6pxh"
+                    android:text="@{loginOrSignupVM.loginOrSignupModel.txtWelcometoourcommunity}"
+                    tools:text="@string/msg_welcome_to_our_community" />
+
+                <TextView
+                    android:id="@+id/txtOurCommunityIs"
+                    style="@style/txtPoppinsregular12"
+                    android:textSize="19dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.01"
+                    android:lineSpacingExtra="@dimen/_8pxh"
+                    android:text="@{loginOrSignupVM.loginOrSignupModel.txtOurCommunityIs}"
+                    tools:text="@string/msg_our_community_is" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageLogo"
+                android:layout_width="@dimen/_129pxh"
+                android:layout_height="@dimen/_119pxh"
+                android:layout_gravity="center_horizontal"
+
+          android:layout_marginTop="30dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_logo_gray_50_01"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_logo_gray_50_01" />
+
+            <TextView
+                android:id="@+id/txtGetInThrough"
+                style="@style/txtPoppinssemibold18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@{loginOrSignupVM.loginOrSignupModel.txtGetInThrough}"
+                tools:text="@string/lbl_get_in_through" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSignUp"
+                android:layout_width="@dimen/_311pxh"
+                android:layout_height="@dimen/_59pxv"
+                android:layout_gravity="center_horizontal"
+                android:background="#047FF8"
+               android:textAppearance="@style/TextAppearance.Material3.DisplayMedium"
+              android:layout_margin="@dimen/_22pxh"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_19pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingBottom="@dimen/_19pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_sign_up"
+                android:textAllCaps="false"
+                android:textColor="@color/white_A700"
+                android:textFontWeight="500"
+                android:textSize="@dimen/_19pxh"
+                android:textStyle="bold"
+                  />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnLogin"
+                android:layout_width="@dimen/_311pxh"
+                android:layout_height="@dimen/_55pxv"
+                android:layout_gravity="center_horizontal"
+                android:background="#DA9797"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+             android:textAppearance="@style/TextAppearance.Material3.DisplayMedium"
+                android:layout_margin="@dimen/_13pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_19pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingBottom="@dimen/_19pxv"
+                android:singleLine="true"
+                android:text="LOGIN"
+                android:textAllCaps="false"
+
+                android:textFontWeight="500"
+               android:textSize="@dimen/_19pxh"
+                android:textStyle="bold"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

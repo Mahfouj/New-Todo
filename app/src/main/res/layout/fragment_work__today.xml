@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Work_TodayFragment">
+
+    <LinearLayout android:id="@+id/linearWorkToday"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        style="@style/groupStyle_white_a700">
+
+        <androidx.appcompat.widget.Toolbar
+            android:gravity="center_horizontal"
+            android:id="@+id/toolbarAppBar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:contentInsetStart="0dp">
+
+            <ImageButton
+                android:background="@drawable/rectangle_border_name_black_900_radius_7"
+                android:id="@+id/btnArrowLeft"
+                android:layout_height="@dimen/_39pxh"
+               android:layout_marginLeft="@dimen/_16pxh"
+               android:layout_marginRight="@dimen/_350pxh"
+                android:layout_width="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_arrow_left_black_900" tools:ignore="ContentDescription"/>
+
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout android:id="@+id/linearFortyOne"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/_32pxh"
+            android:paddingStart="@dimen/_32pxh" android:paddingTop="@dimen/_63pxv">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearPageHeader"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" android:orientation="vertical">
+
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtMakeAWishList"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_14pxh"
+                    android:singleLine="true"
+                    android:text="@{workTodayVM.workTodayModel.txtMakeAWishList}"
+                    style="@style/txtPoppinssemibold28"
+                    tools:text="@string/lbl_work_today_s2"/>
+
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtMakeYourJobEasier"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:letterSpacing="0.01"
+                    android:textSize="@dimen/_16pxh"
+                    android:lineSpacingExtra="@dimen/_6pxh"
+                    android:singleLine="true"
+                    android:text="@{workTodayVM.workTodayModel.txtMakeYourJobEasier}"
+                    style="@style/txtPoppinsmedium12"
+                    tools:text="@string/msg_make_your_job_easier"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearDate"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:gravity="start"
+                    android:id="@+id/linearDate1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:ellipsize="end"
+                        android:id="@+id/txtToday"
+                          android:textSize="@dimen/_16pxh"
+                         android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{workTodayVM.workTodayModel.txtToday}"
+                        style="@style/txtPoppinsmedium14" tools:text="@string/lbl_today"/>
+
+                    <TextView
+                        android:ellipsize="end"
+                        android:id="@+id/txtDate"
+                       android:textSize="@dimen/_16pxh"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{workTodayVM.workTodayModel.txtDate}"
+                        style="@style/txtPoppinssemibold16"
+                        tools:text="@string/lbl_02_april_2021"/>
+                </LinearLayout>
+                <ImageButton
+                    android:background="@drawable/rectangle_bg_name_gray_50_02_radius_14"
+                    android:id="@+id/btnCalendar"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_78pxh"
+                    android:layout_width="@dimen/_70pxh"
+                    android:layout_marginLeft="@dimen/_220pxh"
+                    android:paddingHorizontal="@dimen/_17pxh"
+                    android:paddingVertical="@dimen/_17pxv"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_calendar" tools:ignore="ContentDescription"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:id="@+id/linearTodoWorkItem"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/_15pxv"
+                android:paddingEnd="@dimen/_27pxh"
+                android:paddingStart="@dimen/_27pxh"
+                android:paddingTop="@dimen/_15pxv"
+                style="@style/groupStyle_white_a700">
+                <View
+                     android:background="#7A4E4E"
+                    android:id="@+id/viewStatusColor"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_26pxh"
+                    android:layout_width="@dimen/_28pxh"
+
+                    />
+
+                <TextView
+                    android:ellipsize="end"
+                    android:id="@+id/txtResearchProduct"
+                    android:layout_gravity="center_vertical"
+                   android:layout_marginLeft="@dimen/_16pxh"
+                    android:layout_height="wrap_content"
+                   android:textSize="@dimen/_16pxh"
+                     android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{workTodayVM.workTodayModel.txtResearchProduct}"
+                    style="@style/txtPoppinsregular14" tools:text="@string/msg_research_product"/>
+                <FrameLayout
+                    android:id="@+id/frameSpacer"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/imageArrowIcon"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_16pxh"
+                   android:background="#000"
+                  android:layout_marginLeft="@dimen/_16pxh"
+                    android:layout_width="@dimen/_20pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_arrow_icon"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_arrow_icon"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:id="@+id/linearTodoWorkItem1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/_15pxv"
+                android:paddingEnd="@dimen/_27pxh"
+                android:paddingStart="@dimen/_27pxh"
+                android:paddingTop="@dimen/_15pxv" style="@style/groupStyle_white_a700">
+                <View
+                    android:background="#7A4E4E"
+                    android:id="@+id/viewStatusColor1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_26pxh" android:layout_width="@dimen/_28pxh"/>
+
+                <TextView
+                  android:layout_marginLeft="@dimen/_16pxh"
+                    android:ellipsize="end"
+                    android:id="@+id/txtResearchProduct1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                 android:textSize="@dimen/_16pxh"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{workTodayVM.workTodayModel.txtResearchProduct1}"
+                    style="@style/txtPoppinsregular14" tools:text="@string/msg_create_action_plan"/>
+
+                <FrameLayout
+                    android:id="@+id/frameSpacer1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/imageArrowIcon1"
+                  android:background="#000"
+                  android:layout_marginLeft="@dimen/_16pxh"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_16pxh"
+                    android:layout_width="@dimen/_20pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_arrow_icon"
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/img_arrow_icon"/>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                 android:ellipsize="end"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:id="@+id/btnMakeAWishList"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_60pxv"
+                android:background="#0A488E"
+                android:layout_width="@dimen/_311pxh"
+                android:paddingBottom="@dimen/_18pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:layout_margin="@dimen/_16pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_18pxv"
+                android:singleLine="true"
+                android:text="@string/msg_make_a_wish_list"
+                android:textAllCaps="false"
+                android:textColor="@color/white_A700"
+                android:textFontWeight="600"
+                android:textSize="@dimen/_16pxh"
+                android:textStyle="bold" tools:text="@string/msg_make_a_wish_list"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

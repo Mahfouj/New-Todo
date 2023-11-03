@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toodo_nav"
+    app:startDestination="@id/homeFragment">
+
+
+    <fragment
+        android:id="@+id/login_Singup"
+        android:name="com.example.toodo_app.Login_Singup"
+        android:label="fragment_login__singup"
+        tools:layout="@layout/fragment_login__singup" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.toodo_app.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_login_Singup"
+            app:destination="@id/login_Singup" />
+    </fragment>
+    <fragment
+        android:id="@+id/singFragment"
+        android:name="com.example.toodo_app.SingFragment"
+        android:label="fragment_sing"
+        tools:layout="@layout/fragment_sing" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.toodo_app.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/forget_PasswordFragment"
+        android:name="com.example.toodo_app.Forget_PasswordFragment"
+        android:label="fragment_forget__password"
+        tools:layout="@layout/fragment_forget__password" />
+    <fragment
+        android:id="@+id/homesFragment"
+        android:name="com.example.toodo_app.HomesFragment"
+        android:label="fragment_homes"
+        tools:layout="@layout/fragment_homes" />
+    <fragment
+        android:id="@+id/personalityFragment"
+        android:name="com.example.toodo_app.PersonalityFragment"
+        android:label="fragment_personality"
+        tools:layout="@layout/fragment_personality" />
+    <fragment
+        android:id="@+id/work_TodayFragment"
+        android:name="com.example.toodo_app.Work_TodayFragment"
+        android:label="fragment_work__today"
+        tools:layout="@layout/fragment_work__today" />
+    <fragment
+        android:id="@+id/wish_ListFragment"
+        android:name="com.example.toodo_app.Wish_ListFragment"
+        android:label="fragment_wish__list"
+        tools:layout="@layout/fragment_wish__list" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.toodo_app.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/languageFragment"
+        android:name="com.example.toodo_app.LanguageFragment"
+        android:label="fragment_language"
+        tools:layout="@layout/fragment_language" />
+    <fragment
+        android:id="@+id/termsAndConditionsFragment"
+        android:name="com.example.toodo_app.TermsAndConditionsFragment"
+        android:label="fragment_terms_and_conditions"
+        tools:layout="@layout/fragment_terms_and_conditions" />
+
+
+</navigation>
