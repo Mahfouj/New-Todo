@@ -28,17 +28,17 @@
                 android:layout_width="match_parent"
                 android:orientation="horizontal">
 
-                <ImageButton
-                    android:background="@drawable/rectangle_border_name_black_900_radius_7"
-                    android:id="@+id/btnArrowLeft"
-                    android:layout_gravity="top"
-                    android:layout_height="@dimen/_24pxh"
-                    android:layout_width="@dimen/_35pxh"
-                    android:paddingHorizontal="@dimen/_10pxh"
-                    android:paddingVertical="@dimen/_6pxv"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/img_arrow_left"
-                    tools:ignore="ContentDescription"/>
+<!--                <ImageButton-->
+<!--                    android:background="@drawable/rectangle_border_name_black_900_radius_7"-->
+<!--                    android:id="@+id/btnArrowLeft"-->
+<!--                    android:layout_gravity="top"-->
+<!--                    android:layout_height="@dimen/_49pxh"-->
+<!--                    android:layout_width="@dimen/_35pxh"-->
+<!--                    android:paddingHorizontal="@dimen/_10pxh"-->
+<!--                    android:paddingVertical="@dimen/_6pxv"-->
+<!--                    android:scaleType="fitCenter"-->
+<!--                    android:src="@drawable/img_arrow_left"-->
+<!--                    tools:ignore="ContentDescription"/>-->
 
                 <TextView
                     android:ellipsize="end"
@@ -153,7 +153,7 @@
                     android:textColor="@color/white_A700"
                     android:letterSpacing="0.01"
                     android:lineSpacingExtra="@dimen/_6pxh"
-                      android:textSize="@dimen/_15pxh"
+                    android:textSize="@dimen/_19pxh"
                     android:singleLine="true"
                     android:background="#CD0E0E"
                     android:text="@{loginVM.loginModel.txtForgotPasswor}"

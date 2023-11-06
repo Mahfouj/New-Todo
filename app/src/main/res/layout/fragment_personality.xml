@@ -28,17 +28,17 @@
                 android:layout_width="match_parent"
                 android:orientation="horizontal">
 
-                <ImageButton
-                    android:background="@drawable/rectangle_border_name_black_900_radius_7"
-                    android:id="@+id/btnArrowLeft"
-                    android:layout_gravity="top"
-                    android:layout_height="@dimen/_24pxh"
-                    android:layout_width="@dimen/_24pxh"
-                    android:paddingHorizontal="@dimen/_6pxh"
-                    android:paddingVertical="@dimen/_6pxv"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/img_arrow_left"
-                    tools:ignore="ContentDescription"/>
+<!--                <ImageButton-->
+<!--                    android:background="@drawable/rectangle_border_name_black_900_radius_7"-->
+<!--                    android:id="@+id/btnArrowLeft"-->
+<!--                    android:layout_gravity="top"-->
+<!--                    android:layout_height="@dimen/_49pxh"-->
+<!--                    android:layout_width="@dimen/_34pxh"-->
+<!--                    android:paddingHorizontal="@dimen/_6pxh"-->
+<!--                    android:paddingVertical="@dimen/_6pxv"-->
+<!--                    android:scaleType="fitCenter"-->
+<!--                    android:src="@drawable/img_arrow_left"-->
+<!--                    tools:ignore="ContentDescription"/>-->
 
                 <TextView
                     android:ellipsize="end"
@@ -71,41 +71,36 @@
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:gravity="start"
                     android:id="@+id/linearEditProfilePic"
-                    android:layout_height="wrap_content"
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
                     android:orientation="vertical"
-                    android:paddingEnd="@dimen/_86pxh" android:paddingStart="@dimen/_86pxh">
+                    android:paddingStart="@dimen/_86pxh"
+                    android:paddingEnd="@dimen/_86pxh">
 
                     <ImageView
                         android:id="@+id/imageProfileImage"
-                        android:layout_height="@dimen/_139pxh"
                         android:layout_width="@dimen/_139pxh"
+                        android:layout_height="@dimen/_139pxh"
                         android:scaleType="centerCrop"
-                        android:circular="@{true}"
-                        android:imageRes="@{@drawable/img_profile_image}"
-                        tools:ignore="ContentDescription" tools:src="@drawable/img_profile_image"/>
+                        tools:ignore="ContentDescription"
+                        tools:src="@drawable/img_profile_image" />
+
                     <TextView
-                        android:alpha="0.8"
-                        android:ellipsize="end"
                         android:id="@+id/txtEditPhoto"
-                       android:background="#AF0909"
-                        android:textColor="@color/white_A700"
-                      android:textSize="@dimen/_16pxh"
-                       android:textStyle="bold"
-                        android:gravity="center"
-                      android:layout_marginLeft="@dimen/_46pxh"
-                        android:layout_height="wrap_content"
+                        style="@style/txtPoppinsmedium12_1"
                         android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.8"
+                        android:textSize="@dimen/_16pxh"
+                        android:ellipsize="end"
                         android:letterSpacing="0.01"
                         android:lineSpacingExtra="@dimen/_6pxh"
                         android:singleLine="true"
-                        android:text="@{personalityVM.personalityModel.txtEditPhoto}"
-                        style="@style/txtPoppinsmedium12_1"
-                        tools:text="@string/lbl_edit_photo"/>
-
+                        android:text="@string/lbl_edit_photo" />
                 </LinearLayout>
+
                 <LinearLayout android:gravity="start"
                     android:id="@+id/linearUserName"
                     android:layout_height="wrap_content"

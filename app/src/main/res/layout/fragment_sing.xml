@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-   android:layout_margin="@dimen/_12pxh"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".SingFragment">
 
@@ -26,17 +26,17 @@
                 android:layout_width="match_parent"
                 android:orientation="horizontal">
 
-                <ImageButton
-                    android:background="@drawable/rectangle_border_name_black_900_radius_7"
-                    android:id="@+id/btnArrowLeft"
-                    android:layout_gravity="top"
-                    android:layout_height="@dimen/_39pxh"
-                    android:layout_width="@dimen/_24pxh"
-                    android:paddingHorizontal="@dimen/_6pxh"
-                    android:paddingVertical="@dimen/_6pxv"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/img_arrow_left"
-                    tools:ignore="ContentDescription"/>
+<!--                <ImageButton-->
+<!--                    android:background="@drawable/rectangle_border_name_black_900_radius_7"-->
+<!--                    android:id="@+id/btnArrowLeft"-->
+<!--                    android:layout_gravity="top"-->
+<!--                    android:layout_height="@dimen/_49pxh"-->
+<!--                    android:layout_width="@dimen/_34pxh"-->
+<!--                    android:paddingHorizontal="@dimen/_6pxh"-->
+<!--                    android:paddingVertical="@dimen/_6pxv"-->
+<!--                    android:scaleType="fitCenter"-->
+<!--                    android:src="@drawable/img_arrow_left"-->
+<!--                    tools:ignore="ContentDescription"/>-->
 
                 <TextView
                     android:id="@+id/txtPersonality"
@@ -80,7 +80,7 @@
                         android:id="@+id/txtWhenCommunityComes"
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
-                        android:lineSpacingExtra="@dimen/_6pxh"
+                        android:lineSpacingExtra="@dimen/_4pxh"
                         android:text="@{signupVM.signupModel.txtWhenCommunityComes}"
                         style="@style/txtPoppinsbold34"
                         tools:text="@string/msg_when_community_comes"/>
@@ -167,12 +167,14 @@
                     android:textColor="@color/onPrimary"
                     android:textColorHint="@color/onPrimary"
                     android:textFontWeight="500"
-                    android:textSize="@dimen/_19pxh"
+                    android:textSize="@dimen/_16pxh"
                     android:textStyle="bold"
                     tools:ignore="Autofill"/>
-                <TextView android:gravity="start"
+                <TextView
+                    android:gravity="start"
                     android:id="@+id/txtLoremIpsumDolor"
                     android:layout_height="wrap_content"
+                     android:textSize="@dimen/_16pxh"
                     android:layout_width="match_parent"
                     android:letterSpacing="0.01"
                     android:lineSpacingExtra="@dimen/_8pxh"

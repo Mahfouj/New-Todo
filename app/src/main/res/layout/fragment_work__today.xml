@@ -19,15 +19,14 @@
             android:layout_width="match_parent"
             app:contentInsetStart="0dp">
 
-            <ImageButton
-                android:background="@drawable/rectangle_border_name_black_900_radius_7"
-                android:id="@+id/btnArrowLeft"
-                android:layout_height="@dimen/_39pxh"
-               android:layout_marginLeft="@dimen/_16pxh"
-               android:layout_marginRight="@dimen/_350pxh"
-                android:layout_width="match_parent"
-                android:scaleType="fitCenter"
-                android:src="@drawable/img_arrow_left_black_900" tools:ignore="ContentDescription"/>
+<!--            <ImageButton-->
+<!--                android:background="@drawable/rectangle_border_name_black_900_radius_7"-->
+<!--                android:id="@+id/btnArrowLeft"-->
+<!--                android:layout_height="@dimen/_49pxh"-->
+<!--    -->
+<!--                android:layout_width="0dp"-->
+<!--                android:scaleType="fitCenter"-->
+<!--                android:src="@drawable/img_arrow_left_black_900" tools:ignore="ContentDescription"/>-->
 
         </androidx.appcompat.widget.Toolbar>
         <LinearLayout android:id="@+id/linearFortyOne"

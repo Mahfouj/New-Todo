@@ -17,16 +17,16 @@
             android:layout_width="match_parent"
 
             >
-            <ImageButton
-                android:background="@drawable/rectangle_border_name_black_900_radius_7"
-                android:id="@+id/btnArrowLeft"
-                android:layout_height="@dimen/_38pxh"
-                android:layout_width="match_parent"
-             android:layout_marginRight="@dimen/_320pxh"
-                android:paddingHorizontal="@dimen/_6pxh"
-                android:paddingVertical="@dimen/_6pxv"
-                android:scaleType="fitCenter"
-                android:src="@drawable/img_arrow_left" tools:ignore="ContentDescription"/>
+<!--            <ImageButton-->
+<!--                android:background="@drawable/rectangle_border_name_black_900_radius_7"-->
+<!--                android:id="@+id/btnArrowLeft"-->
+<!--                android:layout_height="@dimen/_38pxh"-->
+<!--                android:layout_width="match_parent"-->
+<!--             android:layout_marginRight="@dimen/_320pxh"-->
+<!--                android:paddingHorizontal="@dimen/_6pxh"-->
+<!--                android:paddingVertical="@dimen/_6pxv"-->
+<!--                android:scaleType="fitCenter"-->
+<!--                android:src="@drawable/img_arrow_left" tools:ignore="ContentDescription"/>-->
         </androidx.appcompat.widget.Toolbar>
 
         <LinearLayout
@@ -36,7 +36,7 @@
             android:orientation="vertical"
             android:paddingEnd="@dimen/_32pxh"
             android:paddingStart="@dimen/_32pxh"
-            android:paddingTop="@dimen/_74pxv">
+            android:paddingTop="@dimen/_94pxv">
 
             <LinearLayout
                 android:gravity="start"
@@ -72,12 +72,13 @@
                 android:id="@+id/linearPersonality"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
+                android:background="@color/white_A700"
                 android:orientation="horizontal"
                 android:paddingBottom="@dimen/_20pxv"
                 android:paddingEnd="@dimen/_28pxh"
                 android:paddingStart="@dimen/_28pxh"
-                android:paddingTop="@dimen/_20pxv"
-                style="@style/groupStyle_cornerRadius">
+                android:paddingTop="@dimen/_20pxv">
+
 
                 <TextView android:ellipsize="end"
                     android:id="@+id/txtPersonality"
@@ -105,12 +106,13 @@
                 android:id="@+id/linearLanguage"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
+              android:background="@color/white_A700"
                 android:orientation="horizontal"
                 android:paddingBottom="@dimen/_19pxv"
                 android:paddingEnd="@dimen/_28pxh"
                 android:paddingStart="@dimen/_28pxh"
                 android:paddingTop="@dimen/_19pxv"
-                 style="@style/groupStyle_cornerRadius">
+                 >
 
                  <TextView android:ellipsize="end"
                     android:textSize="@dimen/_16pxh"
@@ -136,12 +138,13 @@
                 android:gravity="center"
                 android:id="@+id/linearTermsAndConditions"
                 android:layout_height="wrap_content"
+                 android:background="@color/white_A700"
                 android:layout_width="match_parent"
                 android:orientation="horizontal"
                 android:paddingBottom="@dimen/_20pxv"
                 android:paddingEnd="@dimen/_28pxh"
                 android:paddingStart="@dimen/_28pxh"
-                android:paddingTop="@dimen/_20pxv" style="@style/groupStyle_cornerRadius">
+                android:paddingTop="@dimen/_20pxv" />
 
                 <TextView
                     android:ellipsize="end"
@@ -172,7 +175,7 @@
                 android:ellipsize="end"
                 android:fontFamily="@font/poppins"
                 android:gravity="center" android:id="@+id/btnLogOut"
-
+               android:layout_margin="@dimen/_16pxh"
                 android:layout_gravity="center_horizontal"
                 android:layout_height="@dimen/_60pxv"
                 android:layout_width="@dimen/_311pxh"
@@ -188,8 +191,6 @@
                 android:textSize="@dimen/_16pxh"
                 android:textStyle="bold" tools:text="@string/lbl_log_out"/>
         </LinearLayout>
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>

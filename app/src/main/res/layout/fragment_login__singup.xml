@@ -1,36 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-  android:layout_margin="@dimen/_7pxv"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Login_Singup">
 
 
-    <LinearLayout android:id="@+id/linearLoginOrSignUp"
+    <LinearLayout
+        android:id="@+id/linearLoginOrSignUp"
+        android:background="@color/white_A700"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:orientation="vertical"
-        style="@style/groupStyle_cornerRadius_rectangle_bg_name_primary_opacity_0_05_radius_14">
+        >
 
         <androidx.appcompat.widget.Toolbar
             android:gravity="center_horizontal"
             android:id="@+id/toolbarAppBar"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
+            app:contentInsetStart="0dp"
             >
-            <ImageButton
-                android:background="@drawable/rectangle_border_name_black_900_radius_7"
-                android:id="@+id/btnArrowLeft"
-                android:layout_height="wrap_content"
-                android:layout_width="match_parent"
-               android:layout_marginRight="@dimen/_350pxh"
-                android:paddingHorizontal="@dimen/_6pxh"
-                android:paddingVertical="@dimen/_6pxv"
-                android:scaleType="fitCenter"
-                android:src="@drawable/img_arrow_left"
-                tools:ignore="ContentDescription"/>
+<!--            <ImageButton-->
+<!--                android:background="@drawable/rectangle_border_name_black_900_radius_7"-->
+<!--                android:id="@+id/btnArrowLeft"-->
+<!--                android:layout_height="@dimen/_49pxh"-->
+<!--                android:layout_width="@dimen/_34pxh"-->
+<!--               android:layout_marginRight="@dimen/_350pxh"-->
+<!--                android:paddingHorizontal="@dimen/_6pxh"-->
+<!--              android:layout_marginLeft="@dimen/_16pxh"-->
+<!--                android:paddingVertical="@dimen/_6pxv"-->
+<!--                android:scaleType="fitCenter"-->
+<!--                android:src="@drawable/img_arrow_left"-->
+<!--                tools:ignore="ContentDescription"/>-->
         </androidx.appcompat.widget.Toolbar>
 
         <LinearLayout
@@ -38,6 +42,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+           android:background="@color/white_A700"
             android:paddingStart="@dimen/_32pxh"
             android:paddingTop="@dimen/_25pxv"
             android:paddingEnd="@dimen/_32pxh"
@@ -145,4 +150,4 @@
         </LinearLayout>
     </LinearLayout>
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

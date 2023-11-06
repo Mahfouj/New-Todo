@@ -3,73 +3,139 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/toodo_nav"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/splish_SreenFragment">
 
 
     <fragment
         android:id="@+id/login_Singup"
         android:name="com.example.toodo_app.Login_Singup"
         android:label="fragment_login__singup"
-        tools:layout="@layout/fragment_login__singup" />
-    <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.example.toodo_app.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
+        tools:layout="@layout/fragment_login__singup" >
         <action
-            android:id="@+id/action_homeFragment_to_login_Singup"
-            app:destination="@id/login_Singup" />
+            android:id="@+id/action_login_Singup_to_singFragment"
+            app:destination="@id/singFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/singFragment"
         android:name="com.example.toodo_app.SingFragment"
         android:label="fragment_sing"
-        tools:layout="@layout/fragment_sing" />
+        tools:layout="@layout/fragment_sing" >
+        <action
+            android:id="@+id/action_singFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_singFragment_to_login_Singup"
+            app:destination="@id/login_Singup" />
+    </fragment>
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.toodo_app.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_forget_PasswordFragment"
+            app:destination="@id/forget_PasswordFragment" />
+    </fragment>
     <fragment
         android:id="@+id/forget_PasswordFragment"
         android:name="com.example.toodo_app.Forget_PasswordFragment"
         android:label="fragment_forget__password"
-        tools:layout="@layout/fragment_forget__password" />
+        tools:layout="@layout/fragment_forget__password" >
+        <action
+            android:id="@+id/action_forget_PasswordFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_forget_PasswordFragment_to_homesFragment"
+            app:destination="@id/homesFragment" />
+    </fragment>
     <fragment
         android:id="@+id/homesFragment"
         android:name="com.example.toodo_app.HomesFragment"
         android:label="fragment_homes"
-        tools:layout="@layout/fragment_homes" />
+        tools:layout="@layout/fragment_homes" >
+        <action
+            android:id="@+id/action_homesFragment_to_forget_PasswordFragment"
+            app:destination="@id/forget_PasswordFragment" />
+        <action
+            android:id="@+id/action_homesFragment_to_personalityFragment"
+            app:destination="@id/personalityFragment" />
+    </fragment>
     <fragment
         android:id="@+id/personalityFragment"
         android:name="com.example.toodo_app.PersonalityFragment"
         android:label="fragment_personality"
-        tools:layout="@layout/fragment_personality" />
+        tools:layout="@layout/fragment_personality" >
+        <action
+            android:id="@+id/action_personalityFragment_to_homesFragment"
+            app:destination="@id/homesFragment" />
+        <action
+            android:id="@+id/action_personalityFragment_to_work_TodayFragment"
+            app:destination="@id/work_TodayFragment" />
+    </fragment>
     <fragment
         android:id="@+id/work_TodayFragment"
         android:name="com.example.toodo_app.Work_TodayFragment"
         android:label="fragment_work__today"
-        tools:layout="@layout/fragment_work__today" />
+        tools:layout="@layout/fragment_work__today" >
+        <action
+            android:id="@+id/action_work_TodayFragment_to_wish_ListFragment"
+            app:destination="@id/wish_ListFragment" />
+    </fragment>
     <fragment
         android:id="@+id/wish_ListFragment"
         android:name="com.example.toodo_app.Wish_ListFragment"
         android:label="fragment_wish__list"
-        tools:layout="@layout/fragment_wish__list" />
+        tools:layout="@layout/fragment_wish__list" >
+        <action
+            android:id="@+id/action_wish_ListFragment_to_work_TodayFragment"
+            app:destination="@id/work_TodayFragment" />
+        <action
+            android:id="@+id/action_wish_ListFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.example.toodo_app.SettingsFragment"
         android:label="fragment_settings"
-        tools:layout="@layout/fragment_settings" />
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_languageFragment"
+            app:destination="@id/languageFragment" />
+    </fragment>
     <fragment
         android:id="@+id/languageFragment"
         android:name="com.example.toodo_app.LanguageFragment"
         android:label="fragment_language"
-        tools:layout="@layout/fragment_language" />
+        tools:layout="@layout/fragment_language" >
+        <action
+            android:id="@+id/action_languageFragment_to_termsAndConditionsFragment"
+            app:destination="@id/termsAndConditionsFragment" />
+
+        <action
+            android:id="@+id/action_languageFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_languageFragment_to_termsAndConditionsFragment2"
+            app:destination="@id/termsAndConditionsFragment" />
+        <action
+            android:id="@+id/action_languageFragment_to_termsAndConditionsFragment3"
+            app:destination="@id/termsAndConditionsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/termsAndConditionsFragment"
         android:name="com.example.toodo_app.TermsAndConditionsFragment"
         android:label="fragment_terms_and_conditions"
         tools:layout="@layout/fragment_terms_and_conditions" />
+    <fragment
+        android:id="@+id/splish_SreenFragment"
+        android:name="com.example.toodo_app.Splish_SreenFragment"
+        android:label="fragment_splish__sreen"
+        tools:layout="@layout/fragment_splish__sreen" >
+        <action
+            android:id="@+id/action_splish_SreenFragment_to_login_Singup"
+            app:destination="@id/login_Singup" />
+    </fragment>
 
 
 </navigation>

@@ -7,10 +7,13 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="onPrimary">#cc1b1f31</color>
+    <color name="themes">#921616</color>
+    <color name="onPrimary">#CC1B1F31</color>
     <color name="onPrimaryContainer">#d6d6d6</color>
-    <color name="secondaryContainer">#0cfd6b22</color>
+    <color name="secondaryContainer">#BCE85F1B</color>
     <color name="primary">#20b9fc</color>
+
+    <!-- Constant Colors -->
     <color name="deep_orange_50">#f9ece9</color>
     <color name="teal_400">#22b07d</color>
     <color name="gray_50">#f9f9f9</color>
@@ -22,7 +25,7 @@
     <color name="gray_50_03">#f7f5ff</color>
     <color name="red_A400_66">#66fd2121</color>
     <color name="black_900">#000000</color>
-    <color name="themes">[{"name":"lightCode"}]</color>
     <color name="ic_launcher_background">#FFFFFF</color>
-
 </resources>
+
+

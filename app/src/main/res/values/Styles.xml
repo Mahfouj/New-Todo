@@ -6,7 +6,7 @@
         <item name="android:fontFamily">@font/poppins</item>
         <item name="android:textFontWeight" tools:targetApi="p">700</item>
     </style>
-    <style name="groupStyle_cornerRadius">
+    <style name="groupStyle_cornerRadius_rectangle_bg_name_gray_50_radius_14">
         <item name="android:background">@drawable/rectangle_bg_name_gray_50_radius_14</item>
     </style>
     <style name="groupStyle_white_a700">
@@ -120,7 +120,7 @@
         <item name="android:fontFamily">@font/poppins</item>
         <item name="android:textFontWeight" tools:targetApi="p">400</item>
     </style>
-    <style name="groupStyle_cornerRadius_rectangle_bg_name_primary_opacity_0_05_radius_14">
+    <style name="groupStyle_cornerRadius_rectangle_opacity_0_05_radius_14">
         <item name="android:background">@drawable/rectangle_bg_name_primary_opacity_0_05_radius_14</item>
     </style>
     <style name="txtPoppinssemibold28">
@@ -129,10 +129,10 @@
         <item name="android:fontFamily">@font/poppins</item>
         <item name="android:textFontWeight" tools:targetApi="p">600</item>
     </style>
-    <style name="groupStyle_secondaryContainer_cornerRadius">
+    <style name="groupStyle_cornerRadius_rectangle_bg_name_secondarycontainer_radius_14">
         <item name="android:background">@drawable/rectangle_bg_name_secondarycontainer_radius_14</item>
     </style>
-    <style name="groupStyle_deep_purple_a400cornerRadius">
+    <style name="groupStyle_cornerRadius_rectangle_bg_name_deep_purple_a400_opacity_0_05_radius_14">
         <item name="android:background">@drawable/rectangle_bg_name_deep_purple_a400_opacity_0_05_radius_14</item>
     </style>
     <style name="txtPoppinssemibold20">

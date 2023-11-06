@@ -22,8 +22,8 @@
                 android:background="@drawable/rectangle_border_name_black_900_radius_7"
                 android:id="@+id/btnArrowLeft"
               android:layout_marginRight="@dimen/_350pxh"
-                android:layout_height="wrap_content"
-                android:layout_width="match_parent"
+                android:layout_height="@dimen/_49pxh"
+                android:layout_width="0dp"
                 android:paddingHorizontal="@dimen/_6pxh"
                 android:paddingVertical="@dimen/_6pxv"
                 android:scaleType="fitCenter"
@@ -31,7 +31,7 @@
         </androidx.appcompat.widget.Toolbar>
         <LinearLayout
             android:id="@+id/linearThirtyOne"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_width="match_parent"
             android:orientation="vertical"
             android:paddingBottom="@dimen/_59pxv"

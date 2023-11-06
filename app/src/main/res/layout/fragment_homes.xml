@@ -5,58 +5,64 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomesFragment">
-    <LinearLayout android:id="@+id/linearHome"
-        android:layout_height="match_parent"
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linearHome2"
+        style="@style/groupStyle_white_a700"
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        android:paddingEnd="@dimen/_30pxh"
         android:paddingStart="@dimen/_30pxh"
         android:paddingTop="@dimen/_79pxv"
-        style="@style/groupStyle_white_a700">
-        <LinearLayout android:gravity="start"
+        android:paddingEnd="@dimen/_30pxh">
+
+        <LinearLayout
             android:id="@+id/linearProfileDetails"
-            android:layout_height="wrap_content"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="start"
             android:orientation="vertical"
-            android:paddingEnd="@dimen/_84pxh" android:paddingStart="@dimen/_84pxh">
+            android:paddingStart="@dimen/_84pxh"
+            android:paddingEnd="@dimen/_84pxh">
 
-            <ImageView android:id="@+id/imageProfileImage"
-                android:layout_height="@dimen/_139pxh"
+            <ImageView
+                android:id="@+id/imageProfileImage"
                 android:layout_width="@dimen/_139pxh"
+                android:layout_height="@dimen/_139pxh"
                 android:scaleType="centerCrop"
-                android:circular="@{true}"
-                android:imageRes="@{@drawable/img_profile_image}"
-                tools:ignore="ContentDescription" tools:src="@drawable/img_profile_image"/>
+                android:src="@drawable/img_profile_image" />
 
-           <TextView android:ellipsize="end"
+            <TextView
                 android:id="@+id/txtAdalah"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:singleLine="true"
-                android:text="@{homeVM.homeModel.txtAdalah}"
                 style="@style/txtPoppinssemibold20"
-                tools:text="@string/lbl_adalah"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/lbl_adalah" />
 
             <TextView
-                android:ellipsize="end"
                 android:id="@+id/txtAlcanasatre"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:singleLine="true"
-                android:text="@{homeVM.homeModel.txtAlcanasatre}"
                 style="@style/txtPoppinsregular18"
-                tools:text="@string/lbl_alcanasatre"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/lbl_alcanasatre" />
 
             <TextView
-                android:ellipsize="end"
                 android:id="@+id/txtDuration"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-               android:textSize="@dimen/_16pxh"
-                android:singleLine="true"
-                android:text="@{homeVM.homeModel.txtDuration}"
                 style="@style/txtPoppinsregular10"
-                tools:text="@string/msg_joined_6_month_ago"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                tools:ignore="TextSizeCheck"
+                android:text="@string/msg_joined_6_month_ago" />
         </LinearLayout>
 
         <LinearLayout
@@ -69,7 +75,7 @@
             android:paddingEnd="@dimen/_28pxh"
             android:paddingStart="@dimen/_28pxh"
             android:paddingTop="@dimen/_19pxv"
-            style="@style/groupStyle_secondaryContainer_cornerRadius">
+        >
 
             <ImageView
                 android:id="@+id/imageLocation"
@@ -90,8 +96,10 @@
                 android:ellipsize="end"
                 android:id="@+id/txtPersonality"
                 android:layout_gravity="bottom"
+                android:textColor="@color/black_900"
                 android:layout_height="wrap_content"
-               android:textSize="@dimen/_16pxh"
+                android:layout_marginLeft="@dimen/_16pxh"
+                android:textSize="@dimen/_16pxh"
                 android:layout_width="wrap_content"
                 android:singleLine="true"
                 android:text="@{homeVM.homeModel.txtPersonality}"
@@ -116,7 +124,8 @@
         </LinearLayout>
         <LinearLayout
             android:gravity="center_vertical"
-            android:id="@+id/linearWorkTodayS"
+            android:background="@color/white_A700"
+             android:id="@+id/linearWorkTodayS"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:orientation="horizontal"
@@ -124,7 +133,7 @@
             android:paddingEnd="@dimen/_28pxh"
             android:paddingStart="@dimen/_28pxh"
             android:paddingTop="@dimen/_19pxv"
-            style="@style/groupStyle_deep_purple_a400cornerRadius">
+          >
 
             <ImageView
                 android:id="@+id/imageFile"
@@ -147,6 +156,8 @@
                 android:layout_gravity="bottom"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
+               android:layout_marginLeft="@dimen/_16pxh"
+                android:textColor="#000"
                 android:singleLine="true"
                 android:text="@{homeVM.homeModel.txtWorkTodayS}"
                 style="@style/txtPoppinsmedium16_1"
@@ -176,7 +187,7 @@
             android:paddingEnd="@dimen/_26pxh"
             android:paddingStart="@dimen/_26pxh"
             android:paddingTop="@dimen/_20pxv"
-            style="@style/groupStyle_cornerRadius_rectangle_bg_name_primary_opacity_0_05_radius_14">
+          >
 
             <ImageView android:id="@+id/imageSettings"
                 android:layout_gravity="center_vertical"
@@ -195,6 +206,7 @@
                 android:id="@+id/txtSetting"
                 android:layout_gravity="bottom"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_16pxh"
                 android:layout_width="wrap_content"
                 android:singleLine="true"
                 android:text="@{homeVM.homeModel.txtSetting}"
