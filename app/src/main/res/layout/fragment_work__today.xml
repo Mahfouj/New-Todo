@@ -19,14 +19,14 @@
             android:layout_width="match_parent"
             app:contentInsetStart="0dp">
 
-<!--            <ImageButton-->
-<!--                android:background="@drawable/rectangle_border_name_black_900_radius_7"-->
-<!--                android:id="@+id/btnArrowLeft"-->
-<!--                android:layout_height="@dimen/_49pxh"-->
-<!--    -->
-<!--                android:layout_width="0dp"-->
-<!--                android:scaleType="fitCenter"-->
-<!--                android:src="@drawable/img_arrow_left_black_900" tools:ignore="ContentDescription"/>-->
+            <ImageButton
+                android:background="@drawable/rectangle_border_name_black_900_radius_7"
+                android:id="@+id/btnArrowLeft"
+                android:layout_height="@dimen/_49pxh"
+                android:layout_width="38dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_arrow_left_black_900"
+                tools:ignore="ContentDescription"/>
 
         </androidx.appcompat.widget.Toolbar>
         <LinearLayout android:id="@+id/linearFortyOne"
@@ -34,23 +34,28 @@
             android:layout_width="match_parent"
             android:orientation="vertical"
             android:paddingEnd="@dimen/_32pxh"
-            android:paddingStart="@dimen/_32pxh" android:paddingTop="@dimen/_63pxv">
+            android:paddingStart="@dimen/_32pxh"
+            android:paddingTop="@dimen/_63pxv">
+
             <LinearLayout android:gravity="start"
                 android:id="@+id/linearPageHeader"
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content" android:orientation="vertical">
+                android:layout_width="wrap_content"
+                android:orientation="vertical">
 
-                <TextView android:ellipsize="end"
+                <TextView
+                    android:ellipsize="end"
                     android:id="@+id/txtMakeAWishList"
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:lineSpacingExtra="@dimen/_14pxh"
                     android:singleLine="true"
-                    android:text="@{workTodayVM.workTodayModel.txtMakeAWishList}"
+                    android:text="Wrok Today's"
                     style="@style/txtPoppinssemibold28"
-                    tools:text="@string/lbl_work_today_s2"/>
+                    />
 
-                <TextView android:ellipsize="end"
+                <TextView
+                    android:ellipsize="end"
                     android:id="@+id/txtMakeYourJobEasier"
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
@@ -58,9 +63,10 @@
                     android:textSize="@dimen/_16pxh"
                     android:lineSpacingExtra="@dimen/_6pxh"
                     android:singleLine="true"
-                    android:text="@{workTodayVM.workTodayModel.txtMakeYourJobEasier}"
+                    android:text="Make your job easier with our reminders"
                     style="@style/txtPoppinsmedium12"
-                    tools:text="@string/msg_make_your_job_easier"/>
+                  />
+
             </LinearLayout>
 
             <LinearLayout
@@ -83,8 +89,9 @@
                          android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
                         android:singleLine="true"
-                        android:text="@{workTodayVM.workTodayModel.txtToday}"
-                        style="@style/txtPoppinsmedium14" tools:text="@string/lbl_today"/>
+                        android:text="Today"
+                        style="@style/txtPoppinsmedium14"
+                        />
 
                     <TextView
                         android:ellipsize="end"
@@ -93,10 +100,12 @@
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
                         android:singleLine="true"
-                        android:text="@{workTodayVM.workTodayModel.txtDate}"
+                        android:text="02_April_2021"
                         style="@style/txtPoppinssemibold16"
-                        tools:text="@string/lbl_02_april_2021"/>
+                      />
+
                 </LinearLayout>
+
                 <ImageButton
                     android:background="@drawable/rectangle_bg_name_gray_50_02_radius_14"
                     android:id="@+id/btnCalendar"
@@ -107,7 +116,9 @@
                     android:paddingHorizontal="@dimen/_17pxh"
                     android:paddingVertical="@dimen/_17pxv"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/img_calendar" tools:ignore="ContentDescription"/>
+                    android:src="@drawable/img_calendar"
+                    tools:ignore="ContentDescription"/>
+
             </LinearLayout>
 
             <LinearLayout
@@ -121,13 +132,13 @@
                 android:paddingStart="@dimen/_27pxh"
                 android:paddingTop="@dimen/_15pxv"
                 style="@style/groupStyle_white_a700">
+
                 <View
                      android:background="#7A4E4E"
                     android:id="@+id/viewStatusColor"
                     android:layout_gravity="center_vertical"
                     android:layout_height="@dimen/_26pxh"
                     android:layout_width="@dimen/_28pxh"
-
                     />
 
                 <TextView
@@ -139,8 +150,10 @@
                    android:textSize="@dimen/_16pxh"
                      android:layout_width="wrap_content"
                     android:singleLine="true"
-                    android:text="@{workTodayVM.workTodayModel.txtResearchProduct}"
-                    style="@style/txtPoppinsregular14" tools:text="@string/msg_research_product"/>
+                    android:text="ResearchProduct"
+                    style="@style/txtPoppinsregular14"
+                    />
+
                 <FrameLayout
                     android:id="@+id/frameSpacer"
                     android:layout_height="wrap_content"
@@ -183,8 +196,9 @@
                  android:textSize="@dimen/_16pxh"
                     android:layout_width="wrap_content"
                     android:singleLine="true"
-                    android:text="@{workTodayVM.workTodayModel.txtResearchProduct1}"
-                    style="@style/txtPoppinsregular14" tools:text="@string/msg_create_action_plan"/>
+                    android:text="Create Action Plan"
+                    style="@style/txtPoppinsregular14"
+                    tools:text="@string/msg_create_action_plan"/>
 
                 <FrameLayout
                     android:id="@+id/frameSpacer1"

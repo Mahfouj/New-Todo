@@ -52,9 +52,9 @@
                     android:layout_width="match_parent"
                     android:lineSpacingExtra="@dimen/_14pxh"
                     android:singleLine="true"
-                    android:text="@{wishListVM.wishListModel.txtMakeAWishList}"
+                    android:text="Make a Wish List"
                     style="@style/txtPoppinssemibold28"
-                    tools:text="@string/msg_make_a_wish_list"/>
+                  />
 
                 <TextView
                     android:ellipsize="end"
@@ -65,9 +65,9 @@
                     android:letterSpacing="0.01"
                     android:lineSpacingExtra="@dimen/_6pxh"
                     android:singleLine="true"
-                    android:text="@{wishListVM.wishListModel.txtMakeYourJobEasier}"
+                    android:text="Make Your job easier with our reminders"
                     style="@style/txtPoppinsmedium12"
-                    tools:text="@string/msg_make_your_job_easier"/>
+                     />
 
             </LinearLayout>
 

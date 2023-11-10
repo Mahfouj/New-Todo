@@ -18,17 +18,17 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             >
-<!--            <ImageButton-->
-<!--                android:background="@drawable/rectangle_border_name_black_900_radius_7"-->
-<!--                android:id="@+id/btnArrowLeft"-->
-<!--               android:layout_marginRight="@dimen/_330pxh"-->
-<!--                android:layout_height="@dimen/_49pxh"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:paddingHorizontal="@dimen/_6pxh"-->
-<!--                android:paddingVertical="@dimen/_6pxv"-->
-<!--                android:scaleType="fitCenter"-->
-<!--                android:src="@drawable/img_arrow_left"-->
-<!--                tools:ignore="ContentDescription"/>-->
+            <ImageButton
+                android:background="@drawable/rectangle_border_name_black_900_radius_7"
+                android:id="@+id/btnArrowLeft"
+               android:layout_marginRight="@dimen/_330pxh"
+                android:layout_height="@dimen/_49pxh"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="@dimen/_6pxh"
+                android:paddingVertical="@dimen/_6pxv"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_arrow_left"
+                tools:ignore="ContentDescription"/>
         </androidx.appcompat.widget.Toolbar>
 
         <LinearLayout android:id="@+id/linearThirtyTwo"
@@ -38,12 +38,14 @@
             android:paddingEnd="@dimen/_31pxh"
             android:paddingStart="@dimen/_31pxh"
             android:paddingTop="@dimen/_66pxv">
+
             <LinearLayout android:gravity="start"
                 android:id="@+id/linearPageHeader"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:orientation="vertical"
-                android:paddingEnd="@dimen/_1pxh" android:paddingStart="@dimen/_1pxh">
+                android:paddingEnd="@dimen/_1pxh"
+                android:paddingStart="@dimen/_1pxh">
 
                 <TextView
                     android:ellipsize="end"
@@ -52,8 +54,9 @@
                     android:layout_width="wrap_content"
                     android:lineSpacingExtra="@dimen/_14pxh"
                     android:singleLine="true"
-                    android:text="@{languageVM.languageModel.txtLanguage}"
-                    style="@style/txtPoppinssemibold28" tools:text="@string/lbl_language"/>
+                    android:text="Language"
+                    style="@style/txtPoppinssemibold28"
+                     />
 
                 <TextView android:ellipsize="end"
                     android:id="@+id/txtYourSettingsSo"
@@ -63,9 +66,9 @@
                     android:letterSpacing="0.01"
                     android:lineSpacingExtra="@dimen/_6pxh"
                     android:singleLine="true"
-                    android:text="@{languageVM.languageModel.txtYourSettingsSo}"
+                    android:text="Your Settings So that We Are Comfortable"
                     style="@style/txtPoppinsmedium12"
-                    tools:text="@string/msg_your_settings_so"/>
+                 />
             </LinearLayout>
 
             <androidx.appcompat.widget.AppCompatButton

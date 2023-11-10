@@ -22,9 +22,17 @@ class Login_Singup : Fragment() {
 
         binding= FragmentLoginSingupBinding.inflate(inflater,container,false)
 
-        binding.btnSignUp.setOnClickListener {
-            findNavController().navigate(R.id.action_login_Singup_to_singFragment)
+         binding.btnSignUp.setOnClickListener {
+             findNavController().navigate(R.id.action_login_Singup_to_singFragment)
+         }
+
+        binding.btnLogin.setOnClickListener {
+            findNavController().navigate(R.id.action_login_Singup_to_loginFragment)
         }
+
+//        binding.btnArrowLeft.setOnClickListener {
+//            findNavController().navigate(R.id.action_login_Singup_to_splish_SreenFragment)
+//        }
 
         return(binding.root)
     }

@@ -18,39 +18,48 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"  >
 
-<!--            <ImageButton-->
-<!--                android:background="@drawable/rectangle_border_name_black_900_radius_7"-->
-<!--                android:layout_marginRight="@dimen/_330pxh"-->
-<!--                android:id="@+id/btnArrowLeft"-->
-<!--                android:layout_height="@dimen/_48pxh"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:paddingHorizontal="@dimen/_6pxh"-->
-<!--                android:paddingVertical="@dimen/_6pxv"-->
-<!--                android:scaleType="fitCenter"-->
-<!--                android:src="@drawable/img_arrow_left" tools:ignore="ContentDescription"/>-->
+            <ImageButton
+                android:background="@drawable/rectangle_border_name_black_900_radius_7"
+                android:layout_marginRight="@dimen/_330pxh"
+                android:id="@+id/btnArrowLeft"
+                android:layout_height="@dimen/_48pxh"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="@dimen/_6pxh"
+                android:paddingVertical="@dimen/_6pxv"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_arrow_left" tools:ignore="ContentDescription"/>
         </androidx.appcompat.widget.Toolbar>
-        <LinearLayout android:gravity="start"
+
+        <LinearLayout
+            android:gravity="start"
             android:id="@+id/linearFortyFour"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:orientation="vertical"
             android:paddingBottom="@dimen/_50pxv"
             android:paddingEnd="@dimen/_32pxh"
-            android:paddingStart="@dimen/_32pxh" android:paddingTop="@dimen/_50pxv">
-            <TextView android:id="@+id/txtTermAndCondition"
+            android:paddingStart="@dimen/_32pxh"
+            android:paddingTop="@dimen/_50pxv">
+
+            <TextView
+                android:id="@+id/txtTermAndCondition"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:lineSpacingExtra="@dimen/_10pxh"
                 android:text="@{termsandconditionsVM.termsandconditionsModel.txtTermAndCondition}"
-                style="@style/txtPoppinssemibold28" tools:text="@string/msg_terms_and_conditions"/>
-            <TextView android:id="@+id/txtDescription"
+                style="@style/txtPoppinssemibold28"
+                tools:text="@string/msg_terms_and_conditions"/>
+
+            <TextView
+                android:id="@+id/txtDescription"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:letterSpacing="0.01"
                 android:lineSpacingExtra="@dimen/_12pxh"
                 android:textSize="@dimen/_16pxh"
                 android:text="@{termsandconditionsVM.termsandconditionsModel.txtDescription}"
-                style="@style/txtPoppinsregular12_2" tools:text="@string/msg_lorem_ipsum_dolor2"/>
+                style="@style/txtPoppinsregular12_2"
+                tools:text="@string/msg_lorem_ipsum_dolor2"/>
         </LinearLayout>
     </LinearLayout>
 

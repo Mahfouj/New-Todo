@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".SingFragment">
 
@@ -26,17 +25,17 @@
                 android:layout_width="match_parent"
                 android:orientation="horizontal">
 
-<!--                <ImageButton-->
-<!--                    android:background="@drawable/rectangle_border_name_black_900_radius_7"-->
-<!--                    android:id="@+id/btnArrowLeft"-->
-<!--                    android:layout_gravity="top"-->
-<!--                    android:layout_height="@dimen/_49pxh"-->
-<!--                    android:layout_width="@dimen/_34pxh"-->
-<!--                    android:paddingHorizontal="@dimen/_6pxh"-->
-<!--                    android:paddingVertical="@dimen/_6pxv"-->
-<!--                    android:scaleType="fitCenter"-->
-<!--                    android:src="@drawable/img_arrow_left"-->
-<!--                    tools:ignore="ContentDescription"/>-->
+                <ImageButton
+                    android:background="@drawable/rectangle_border_name_black_900_radius_7"
+                    android:id="@+id/btnArrowLeft"
+                    android:layout_gravity="top"
+                    android:layout_height="@dimen/_49pxh"
+                    android:layout_width="@dimen/_34pxh"
+                    android:paddingHorizontal="@dimen/_6pxh"
+                    android:paddingVertical="@dimen/_6pxv"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_arrow_left"
+                    tools:ignore="ContentDescription"/>
 
                 <TextView
                     android:id="@+id/txtPersonality"
@@ -45,11 +44,10 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:ellipsize="end"
-
                   android:layout_marginLeft="@dimen/_266pxh"
                     android:singleLine="true"
-                    android:text="@{signupVM.signupModel.txtPersonality}"
-                    tools:text="@string/lbl_sign_up" />
+                    android:text="Sing Up"
+                 />
 
             </LinearLayout>
         </androidx.appcompat.widget.Toolbar>
@@ -81,20 +79,19 @@
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
                         android:lineSpacingExtra="@dimen/_4pxh"
-                        android:text="@{signupVM.signupModel.txtWhenCommunityComes}"
+                        android:text="When community comes Unity"
                         style="@style/txtPoppinsbold34"
-                        tools:text="@string/msg_when_community_comes"/>
+                        />
 
                     <TextView
                         android:id="@+id/txtDuration"
-                        android:layout_height="wrap_content"
+                        style="@style/txtPoppinsregular12_1"
                         android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:letterSpacing="0.01"
                         android:lineSpacingExtra="@dimen/_8pxh"
-                        android:text="@{signupVM.signupModel.txtDuration}"
-                       android:textSize="@dimen/_16pxh"
-                        style="@style/txtPoppinsregular12_1"
-                        tools:text="@string/msg_our_community_is2"/>
+                        android:text="Our Community is always there 24 hours if you need it,don't hesitate to join"
+                        android:textSize="@dimen/_16pxh" />
                 </LinearLayout>
 
                 <ImageView
@@ -120,7 +117,7 @@
                     android:paddingStart="@dimen/_25pxh"
                     android:paddingTop="@dimen/_15pxv"
                     android:singleLine="true"
-                    android:text="@={signupVM.signupModel.etFirstNameValue}"
+                    android:text="Fast name"
                     android:textColor="@color/onPrimary"
                     android:textColorHint="@color/onPrimary"
                     android:textFontWeight="500"
@@ -131,7 +128,7 @@
                     android:background="@drawable/rectangle_border_name_onprimary_opacity_0_1_radius_10"
                     android:ellipsize="end"
                     android:fontFamily="@font/poppins"
-                    android:hint="@string/lbl_last_name"
+                    android:hint="Last Name"
                     android:id="@+id/etLastName"
                     android:inputType="text"
                     android:layout_height="wrap_content"
@@ -141,7 +138,7 @@
                     android:paddingStart="@dimen/_24pxh"
                     android:paddingTop="@dimen/_19pxv"
                     android:singleLine="true"
-                    android:text="@={signupVM.signupModel.etLastNameValue}"
+                    android:text="Last Name"
                     android:textColor="@color/onPrimary"
                     android:textColorHint="@color/onPrimary"
                     android:textFontWeight="500"
@@ -153,7 +150,7 @@
                     android:background="@drawable/rectangle_border_name_onprimary_opacity_0_1_radius_10"
                     android:ellipsize="end"
                     android:fontFamily="@font/poppins"
-                    android:hint="@string/lbl_password"
+                    android:hint="Password"
                     android:id="@+id/etPassword"
                     android:inputType="text"
                     android:layout_height="wrap_content"
@@ -163,7 +160,7 @@
                     android:paddingStart="@dimen/_24pxh"
                     android:paddingTop="@dimen/_19pxv"
                     android:singleLine="true"
-                    android:text="@={signupVM.signupModel.etPasswordValue}"
+                    android:text="Password"
                     android:textColor="@color/onPrimary"
                     android:textColorHint="@color/onPrimary"
                     android:textFontWeight="500"
@@ -178,9 +175,10 @@
                     android:layout_width="match_parent"
                     android:letterSpacing="0.01"
                     android:lineSpacingExtra="@dimen/_8pxh"
-                    android:text="@{signupVM.signupModel.txtLoremIpsumDolor}"
+                    android:text="I Accept the Agreements"
                     style="@style/txtPoppinsmedium12"
-                    tools:text="@string/msg_lorem_ipsum_dolor"/>
+                    android:layout_marginLeft="@dimen/_16pxh"
+                    />
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:background="#0664CF"
@@ -194,7 +192,6 @@
                     android:paddingStart="@dimen/_30pxh"
                     android:paddingTop="@dimen/_19pxv"
                     android:singleLine="true"
-                   android:layout_margin="@dimen/_16pxh"
                     android:text="@string/lbl_next"
                     android:textAllCaps="false"
                     android:textColor="@color/white_A700"
@@ -215,6 +212,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:ellipsize="end"
+                        android:layout_margin="@dimen/_16pxh"
                         android:letterSpacing="0.01"
                         android:lineSpacingExtra="@dimen/_6pxh"
                         android:singleLine="true"

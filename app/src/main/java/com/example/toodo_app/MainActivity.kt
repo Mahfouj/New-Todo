@@ -2,12 +2,23 @@ package com.example.toodo_app
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.LayoutInflater
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.example.toodo_app.databinding.ActivityMainBinding
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.runBlocking
 
 class MainActivity : AppCompatActivity() {
+   lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+      binding= ActivityMainBinding.inflate(layoutInflater)
+
+        runBlocking {
+            installSplashScreen()
+            delay(4000)
+        }
+        setContentView(binding.root)
 
     }
 }

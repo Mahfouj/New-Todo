@@ -61,8 +61,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:lineSpacingExtra="@dimen/_6pxh"
-                    android:text="@{loginOrSignupVM.loginOrSignupModel.txtWelcometoourcommunity}"
-                    tools:text="@string/msg_welcome_to_our_community" />
+                    android:text="Welcome to our Community"
+                   />
 
                 <TextView
                     android:id="@+id/txtOurCommunityIs"
@@ -72,8 +72,8 @@
                     android:layout_height="wrap_content"
                     android:letterSpacing="0.01"
                     android:lineSpacingExtra="@dimen/_8pxh"
-                    android:text="@{loginOrSignupVM.loginOrSignupModel.txtOurCommunityIs}"
-                    tools:text="@string/msg_our_community_is" />
+                    android:text="Our Community is ready to help you to join best platform"
+                      />
             </LinearLayout>
 
             <ImageView
@@ -96,8 +96,8 @@
                 android:layout_gravity="center_horizontal"
                 android:ellipsize="end"
                 android:singleLine="true"
-                android:text="@{loginOrSignupVM.loginOrSignupModel.txtGetInThrough}"
-                tools:text="@string/lbl_get_in_through" />
+                android:text="Get in through"
+            />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnSignUp"

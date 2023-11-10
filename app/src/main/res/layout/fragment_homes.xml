@@ -102,9 +102,9 @@
                 android:textSize="@dimen/_16pxh"
                 android:layout_width="wrap_content"
                 android:singleLine="true"
-                android:text="@{homeVM.homeModel.txtPersonality}"
+                android:text="Personality"
                 style="@style/txtPoppinsmedium16"
-                tools:text="@string/lbl_personality"/>
+                />
 
             <FrameLayout
                 android:id="@+id/frameSpacer1"
@@ -159,9 +159,9 @@
                android:layout_marginLeft="@dimen/_16pxh"
                 android:textColor="#000"
                 android:singleLine="true"
-                android:text="@{homeVM.homeModel.txtWorkTodayS}"
+                android:text="Work Today's"
                 style="@style/txtPoppinsmedium16_1"
-                tools:text="@string/lbl_work_today_s"/>
+              />
 
             <FrameLayout android:id="@+id/frameSpacer3"
                 android:layout_height="wrap_content"
@@ -209,9 +209,9 @@
                 android:layout_marginLeft="@dimen/_16pxh"
                 android:layout_width="wrap_content"
                 android:singleLine="true"
-                android:text="@{homeVM.homeModel.txtSetting}"
+                android:text="Setting"
                 style="@style/txtPoppinsmedium16_2"
-                tools:text="@string/lbl_setting"/>
+              />
 
             <FrameLayout android:id="@+id/frameSpacer5"
                 android:layout_height="wrap_content"

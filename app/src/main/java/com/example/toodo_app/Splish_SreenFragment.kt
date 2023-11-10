@@ -13,33 +13,33 @@ import com.example.toodo_app.base.BaseFragment
 import com.example.toodo_app.databinding.FragmentSplishSreenBinding
 
 class Splish_SreenFragment:BaseFragment<FragmentSplishSreenBinding>(FragmentSplishSreenBinding::inflate) {
-
-    private val splashTime :Long = 2000
+//
+//    private val splashTime :Long = 200
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+//
+//
+// Initialize()
+//
+//
+//        Handler(Looper.getMainLooper()).postDelayed({
 
-        Initialize()
-
-
-
-        Handler(Looper.getMainLooper()).postDelayed({
-
-       findNavController().navigate(R.id.action_splish_SreenFragment_to_login_Singup)
-
-        },splashTime)
-
-
-
-
+        findNavController().navigate(R.id.action_splish_SreenFragment_to_login_Singup)
     }
-
-    private fun Initialize() {
-        var appLogo = binding.imageLogo
-
-        val topAnim = AnimationUtils.loadAnimation(requireContext(),
-            androidx.constraintlayout.widget.R.anim.abc_fade_in)
-        appLogo.startAnimation(topAnim)
-
-    }
+//        },splashTime)
+//
+//
+//
+//
+//    }
+//
+//    private fun Initialize() {
+//        var appLogo = binding.imageLogo
+//
+//        val topAnim = AnimationUtils.loadAnimation(requireContext(),
+//            androidx.constraintlayout.widget.R.anim.abc_fade_in)
+//        appLogo.startAnimation(topAnim)
+//
+//    }
 }

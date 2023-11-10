@@ -6,19 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".Splish_SreenFragment">
     <LinearLayout
-        android:layout_margin="@dimen/_16pxh"
         android:id="@+id/linearAdacana"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:orientation="vertical"
-        style="@style/groupStyle_white_a700">
+        style="@style/groupStyle_white_a700"
+        >
 
-        <ImageView android:id="@+id/imageLogo"
+        <ImageView
+            android:id="@+id/imageLogo"
+            android:layout_width="@dimen/_338pxh"
+            android:layout_height="474dp"
             android:layout_gravity="center_horizontal"
-            android:layout_height="match_parent"
-            android:layout_width="wrap_content"
             android:scaleType="fitXY"
-            tools:ignore="ContentDescription" tools:src="@drawable/img_logo"/>
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_logo" />
 
 
     </LinearLayout>
