@@ -8,38 +8,45 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AnimationUtils
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.navigation.fragment.findNavController
 import com.example.toodo_app.base.BaseFragment
 import com.example.toodo_app.databinding.FragmentSplishSreenBinding
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.runBlocking
 
 class Splish_SreenFragment:BaseFragment<FragmentSplishSreenBinding>(FragmentSplishSreenBinding::inflate) {
-//
-//    private val splashTime :Long = 200
+
+
+    private val splashTime :Long = 200
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-//
-//
-// Initialize()
-//
-//
-//        Handler(Looper.getMainLooper()).postDelayed({
 
-        findNavController().navigate(R.id.action_splish_SreenFragment_to_login_Singup)
+        Initialize()
+
+
+
+        Handler(Looper.getMainLooper()).postDelayed({
+
+            findNavController().navigate(R.id.action_splish_SreenFragment_to_login_Singup)
+
+        },splashTime)
+
+
+
+
     }
-//        },splashTime)
-//
-//
-//
-//
-//    }
-//
-//    private fun Initialize() {
-//        var appLogo = binding.imageLogo
-//
-//        val topAnim = AnimationUtils.loadAnimation(requireContext(),
-//            androidx.constraintlayout.widget.R.anim.abc_fade_in)
-//        appLogo.startAnimation(topAnim)
-//
-//    }
+
+    private fun Initialize() {
+        var appLogo = binding.imageLogo
+
+        val topAnim = AnimationUtils.loadAnimation(requireContext(),
+            androidx.constraintlayout.widget.R.anim.abc_fade_in)
+        appLogo.startAnimation(topAnim)
+
+    }
+
+
+
 }
