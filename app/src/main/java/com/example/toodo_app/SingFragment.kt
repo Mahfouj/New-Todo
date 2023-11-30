@@ -25,7 +25,9 @@ class SingFragment :BaseFragment<FragmentSingBinding>(FragmentSingBinding::infla
             val Email = binding.etEmail.text.toString().trim()
 
             if (isEmailValid(Email) && isPasswordValid(Password)) {
+
                 registerUser(Email, Password, FastName)
+
             } else {
                 Toast.makeText(
                     requireContext(),

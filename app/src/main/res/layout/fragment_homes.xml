@@ -23,7 +23,7 @@
             android:id="@+id/linearProfileDetails"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="30dp"
+            android:layout_marginBottom="35dp"
             android:gravity="start"
             android:orientation="vertical"
             android:paddingStart="@dimen/_84pxh"
@@ -58,11 +58,12 @@
                 android:id="@+id/txtDuration"
                 style="@style/txtPoppinsregular10"
                 android:layout_width="wrap_content"
+                android:textSize="@dimen/_16pxh"
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
                 android:singleLine="true"
                 tools:ignore="TextSizeCheck"
-                android:text="@string/msg_joined_6_month_ago" />
+                android:text="Country" />
         </LinearLayout>
 
         <LinearLayout

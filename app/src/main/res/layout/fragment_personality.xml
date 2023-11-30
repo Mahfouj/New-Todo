@@ -80,7 +80,7 @@
                     android:paddingEnd="@dimen/_86pxh">
 
                     <ImageView
-                        android:id="@+id/imageProfileImage"
+                        android:id="@+id/ProfileImage"
                         android:layout_width="@dimen/_139pxh"
                         android:layout_height="@dimen/_139pxh"
                         android:scaleType="centerCrop"
@@ -109,7 +109,7 @@
 
                     <TextView
                         android:ellipsize="end"
-                        android:id="@+id/txtUserName"
+                        android:id="@+id/userName"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
                         android:textSize="@dimen/_16pxh"
@@ -119,26 +119,27 @@
                         android:text="UserName"
                         style="@style/txtPoppinsmedium12"
                         />
+
                     <EditText
+                        android:id="@+id/UserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:background="@drawable/rectangle_border_name_onprimary_opacity_0_1_radius_10"
                         android:ellipsize="end"
                         android:fontFamily="@font/poppins"
                         android:hint="@string/lbl_adalahalcana"
-                        android:id="@+id/etUserName"
                         android:inputType="text"
-                        android:layout_height="wrap_content"
-                        android:layout_width="match_parent"
-                        android:paddingBottom="@dimen/_13pxv"
-                        android:paddingEnd="@dimen/_24pxh"
                         android:paddingStart="@dimen/_24pxh"
                         android:paddingTop="@dimen/_14pxv"
+                        android:paddingEnd="@dimen/_24pxh"
+                        android:paddingBottom="@dimen/_13pxv"
                         android:singleLine="true"
                         android:textColor="@color/onPrimary"
                         android:textColorHint="@color/onPrimary"
                         android:textFontWeight="500"
                         android:textSize="@dimen/_18pxh"
                         android:textStyle="bold"
-                        tools:ignore="Autofill"/>
+                        tools:ignore="Autofill" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -150,7 +151,7 @@
 
                     <TextView
                         android:ellipsize="end"
-                        android:id="@+id/txtFirstName"
+                        android:id="@+id/FirstName"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
                         android:textSize="@dimen/_16pxh"
@@ -299,7 +300,7 @@
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent" android:orientation="vertical">
                     <TextView android:ellipsize="end"
-                        android:id="@+id/txtCountry"
+                        android:id="@+id/Country"
                         android:layout_height="wrap_content"
                         android:textSize="@dimen/_16pxh"
                         android:layout_width="wrap_content"

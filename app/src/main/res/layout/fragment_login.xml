@@ -167,7 +167,8 @@
                     android:layout_margin="@dimen/_9pxh"
                     android:ellipsize="end"
                     android:fontFamily="@font/poppins"
-                    android:gravity="center" android:id="@+id/btnNext"
+                    android:gravity="center"
+                    android:id="@+id/btnNext"
                     android:layout_height="@dimen/_68pxh"
                     android:layout_width="match_parent"
                     android:paddingBottom="@dimen/_19pxv"
@@ -181,11 +182,15 @@
                     android:textColor="@color/white_A700"
                     android:textFontWeight="500"
                     android:textSize="@dimen/_19pxh"
-                    android:textStyle="bold" tools:text="@string/lbl_next"/>
-                <LinearLayout android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    tools:text="@string/lbl_next"/>
+
+                <LinearLayout
+                    android:gravity="center_vertical"
                     android:id="@+id/linearDonTHaveAnAccount"
                     android:layout_height="wrap_content"
-                    android:layout_width="match_parent" android:orientation="horizontal">
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal">
 
                     <TextView
                         android:ellipsize="end"

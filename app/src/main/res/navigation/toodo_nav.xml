@@ -86,6 +86,9 @@
         tools:layout="@layout/fragment_personality" >
 
 
+        <action
+            android:id="@+id/action_personalityFragment_to_homesFragment"
+            app:destination="@id/homesFragment" />
     </fragment>
     <fragment
         android:id="@+id/work_TodayFragment"
@@ -116,6 +119,12 @@
         <action
             android:id="@+id/action_settingsFragment_to_homesFragment"
             app:destination="@id/homesFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_languageFragment"
+            app:destination="@id/languageFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_termsAndConditionsFragment"
+            app:destination="@id/termsAndConditionsFragment" />
     </fragment>
     <fragment
         android:id="@+id/languageFragment"

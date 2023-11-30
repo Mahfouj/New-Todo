@@ -31,6 +31,9 @@ class LoginFragment : BaseFragment<FragmentLoginBinding>(FragmentLoginBinding::i
              findNavController().navigate(R.id.action_loginFragment_to_forgetpasswordFragment)
          }
 
+        FirebaseAuth.getInstance().currentUser.let {
+            findNavController().navigate(R.id.action_loginFragment_to_homesFragment )
+        }
 
         binding.btnNext.setOnClickListener {
             val Email = binding.etEmail.text.toString().trim()
@@ -68,8 +71,6 @@ class LoginFragment : BaseFragment<FragmentLoginBinding>(FragmentLoginBinding::i
                     .show()
 
                 findNavController().navigate(R.id.action_loginFragment_to_homesFragment )
-
-
 
             } else {
                 Toast.makeText(context,"Login Failed:${task.exception?.message}",Toast.LENGTH_SHORT).show()
